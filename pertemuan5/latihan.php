@@ -16,19 +16,13 @@ require 'config.php';
 // mengambil data 
 // $mahasiswa = mysqli_query($koneksi, "SELECT * FROM mahasiswa");
 
-$mahasiswa = query("SELCET * FROM mahasiswa");
+$mahasiswa = query("SELECT * FROM mahasiswa");
 
 //ambil data (fetch) mahasiswa dari oject result 
 // mysqli_fetch_row -> mengembalikan array numerik
 // mysqli_fetch_assoc -> menembalikan array asosiativ
 // mysqli_fetch_array -> menembalikan array menjadi array
 // mysqli_fetch_object -> menembalikan array menjadi object
-
-
-
-while ($mhs = mysqli_fetch_assoc($mahasiswa)) {
-	var_dump($mhs);
-}
 
 ?>
 
