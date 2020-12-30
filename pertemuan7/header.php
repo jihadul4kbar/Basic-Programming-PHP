@@ -29,6 +29,6 @@
             <td><a href="dosen.php">Dosen</a></td>
             <td><a href="matakuliah.php">Matakuliah</a></td>
             <td><a href="krs.php">Kartu Rencana Studi</a></td>
-            <td><a href="krs.php">Tentang Kami</a></td>
+            <td><a href="tentangkami.php">Tentang Kami</a></td>
         </tr>
     </table>
