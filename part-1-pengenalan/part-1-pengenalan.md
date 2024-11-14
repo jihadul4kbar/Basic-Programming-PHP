@@ -137,6 +137,22 @@ Cek versi PHP
 1. Buka Terminal 
 2. Ketik php -v
 
+```
+PHP 8.0.30 (cli) (built: Sep  1 2023 14:15:38) ( ZTS Visual C++ 2019 x64 )
+Copyright (c) The PHP Group
+Zend Engine v4.0.30, Copyright (c) Zend Technologies
+```
+
+--
+
+Setting Path php di windows
+1. Kelik kanan MyComputer -> Propertis
+2. Advanced System Settings -> Environment Variables
+3. Jendela System Variabel 
+4. Kelik dua kali pada bagian Path
+5. Pilih tombok New 
+6. Isi dengan lokasi php pada XAMPP yakni C:/exampp/php -> OK
+7. Buka terminal dan coba ketik php -v
 ---
 
 #### Penulisan Kode PHP
@@ -168,10 +184,43 @@ php latihan.php
 
 ```
 
+--
+
+Membuat server dari Commnd Line 
+
+```
+php -S localhost:8000
+```
+
+--
+
+
+PHP Info
+
+untuk melihat detail php yang terinstal 
+
+```
+<?php 
+phpinfo();
+>
+
 ---
 
 #### Q- A
 
+---
+
+Materi Selanjutnya
+
+- Pengenalan XAMPP ekosistem
+- Fundametal PHP
+
+---
+
+#### Refrensi
+
+- [Dokumentasi PHP](https://www.php.net/docs.php)
+- [W3School PHP](https://www.w3schools.com/php/)
 
 
 
