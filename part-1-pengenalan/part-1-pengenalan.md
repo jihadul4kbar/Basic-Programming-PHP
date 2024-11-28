@@ -10,7 +10,9 @@ title: "Pengenalan Bahasa PHP"
 <!-- .slide: data-background="#dddddd" -->
 ![Logo PHP ](https://www.php.net/images/php8/logo_php8_3.svg)
 ### *Hypertext Preprocessor*
-by [Jihadul Akbar](https://jihadul4kbar.github.io/)
+[Jihadul Akbar](https://jihadul4kbar.github.io/)
+
+Pertemuan Pertama
 
 ---
 
@@ -77,7 +79,7 @@ by [Jihadul Akbar](https://jihadul4kbar.github.io/)
 
 --
 
-![Resmus Lardof](/img/remus.webp)
+<img src="/img/remus.png" alt="Resmus Lardof" width="300"/>
 
 PHP pertama dikembangkan oleh Resmus Lardof 1994
 
@@ -219,6 +221,7 @@ Materi Selanjutnya
 
 #### Refrensi
 
+- [Materi Belajar](https://github.com/jihadul4kbar/Basic-Programming-PHP)
 - [Dokumentasi PHP](https://www.php.net/docs.php)
 - [W3School PHP](https://www.w3schools.com/php/)
 
