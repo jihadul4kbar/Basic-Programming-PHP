@@ -1,14 +1,14 @@
 <?php
 class Database {
     private static $instance = null;
-    private $conn;
+    public $conn;
 
     private $host = "localhost";
     private $user = "belajar";
     private $pass = "belajar";
     private $dbname = "mvcphp";
 
-    private function __construct() {
+    public function __construct() {
         $this->conn = new PDO("mysql:host=$this->host;dbname=$this->dbname", 
                               $this->user, $this->pass, 
                               [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);

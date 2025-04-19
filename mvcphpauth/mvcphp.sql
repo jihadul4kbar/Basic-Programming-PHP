@@ -53,16 +53,17 @@ INSERT INTO `products` (`id`, `name`, `price`) VALUES
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `name` varchar(100) NOT NULL,
-  `email` varchar(100) NOT NULL
+  `email` varchar(100) NOT NULL,
+  `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`) VALUES
-(8, 'jihad', 'jihad@mvc.com'),
-(10, 'Admin', 'admin@mvc.com');
+INSERT INTO `users` (`id`, `name`, `email`, `password`) VALUES
+(8, 'jihad', 'jihad@mvc.com', '$2y$10$QdAmd2AvqqsGmColvVdq1eSPwPhYe4XuIP2jp7UlVU2U858ctWTVm'),
+(10, 'Admin', 'admin@mvc.com', '$2y$10$C5cdW6aPbEmKb.4TKS0XJe.ap4hn9P6QWibWC061MPV/JEmT3Ftj6');
 
 --
 -- Indexes for dumped tables

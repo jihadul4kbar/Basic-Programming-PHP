@@ -22,7 +22,7 @@ class ProductController {
             $name = $_POST['name'];
             $price = $_POST['price'];
             $this->model->addProduct($name, $price);
-            header("Location: index.php");
+            header("Location: index.php?action=index");
         }
     }
 
@@ -36,13 +36,13 @@ class ProductController {
             $name = $_POST['name'];
             $price = $_POST['price'];
             $this->model->updateProduct($id, $name, $price);
-            header("Location: index.php");
+            header("Location: index.php?action=index");
         }
     }
 
     public function delete($id) {
         $this->model->deleteProduct($id);
-        header("Location: index.php");
+        header("Location: index.php?action=index");
     }
 }
 ?>

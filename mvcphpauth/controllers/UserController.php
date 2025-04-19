@@ -21,7 +21,12 @@ class UserController {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $name = $_POST['name'];
             $email = $_POST['email'];
-            $this->model->addUser($name, $email);
+            $password = $_POST['password'];
+
+            // Enkripsi password sebelum disimpan ke database
+            $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
+            $this->model->addUser($name, $email, $hashedPassword);
             header("Location: index.php?action=user_index");
         }
     }
@@ -35,7 +40,12 @@ class UserController {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $name = $_POST['name'];
             $email = $_POST['email'];
-            $this->model->updateUser($id, $name, $email);
+            $password = $_POST['password'];
+
+            // Enkripsi password sebelum disimpan ke database
+            $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
+            $this->model->updateUser($id, $name, $email, $hashedPassword);
             header("Location: index.php?action=user_index");
         }
     }

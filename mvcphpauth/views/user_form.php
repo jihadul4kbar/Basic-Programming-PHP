@@ -10,6 +10,8 @@
         <input type="text" name="name" value="<?= isset($user) ? $user['name'] : '' ?>" required>
         <label>Email:</label>
         <input type="email" name="email" value="<?= isset($user) ? $user['email'] : '' ?>" required>
+        <label>Password:</label>
+        <input type="text" name="password" value="<?= isset($user) ? $user['password'] : '' ?>" required>
         <button type="submit">Simpan</button>
     </form>
     <a href="index.php?action=user_index">Kembali</a>
